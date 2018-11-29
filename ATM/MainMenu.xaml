@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ATM"
         mc:Ignorable="d"
-        Title="ATM Main Menu" Height="450" Width="800" Background="#FF11FFFF">
+        Title="ATM Main Menu" Height="450" Width="800" Background="#FF00B9FF">
     <Grid Margin="106,0,105,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="262*"/>

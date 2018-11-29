@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ATM"
         mc:Ignorable="d"
-        Title="CheckBalance" Height="450" Width="800" Foreground="Black" Background="#FF00F3FF">
+        Title="CheckBalance" Height="450" Width="800" Foreground="Black" Background="#FF00B9FF">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="665*"/>
+            <ColumnDefinition Width="539*"/>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="108*"/>
             <ColumnDefinition Width="127*"/>
         </Grid.ColumnDefinitions>
         <Label x:Name="lblChk" Content="Check Balance" HorizontalAlignment="Left" Margin="282,89,0,0" VerticalAlignment="Top" FontSize="22" Width="167" Height="52"/>
@@ -16,7 +18,7 @@
         <Label x:Name="lblcurrentBal" Content="Current Balance:" HorizontalAlignment="Left" Margin="185,247,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.728,0.473"/>
         <TextBox x:Name="txtBal" HorizontalAlignment="Left" Height="31" Margin="352,247,0,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" Width="131" TextChanged="txtBal_TextChanged" IsEnabled="False"/>
         <Button x:Name="btnPrint" Content="Print Receipt" HorizontalAlignment="Left" Margin="248,356,0,0" VerticalAlignment="Top" Width="235" Height="53" FontSize="18" Click="btnPrint_Click"/>
-        <Button x:Name="btnBack" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="88" Height="30" FontSize="16" Click="btnBack_Click"/>
+        <Button x:Name="btnBack" Content="Back" Grid.Column="3" HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="88" Height="30" FontSize="16" Click="btnBack_Click"/>
 
     </Grid>
 </Window>

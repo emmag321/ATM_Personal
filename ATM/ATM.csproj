@@ -132,6 +132,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DBConnet.cs" />
     <Compile Include="Withdrawal.xaml.cs">
       <DependentUpon>Withdrawal.xaml</DependentUpon>
     </Compile>

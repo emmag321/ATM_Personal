@@ -8,8 +8,8 @@
         Title="Withdrawal" Height="450" Width="339.857" Background="#FF00B9FF">
     <Grid>
         <TextBlock x:Name="txtBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Withdrawal Amount" VerticalAlignment="Top" Margin="77,43,0,0" FontSize="20"/>
-        <TextBox HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Enter Amount Here" VerticalAlignment="Top" Width="129" Margin="103,103,0,0" RenderTransformOrigin="0.493,2.804"/>
-        <Button Content="Withdraw" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="118,229,0,0" Height="29"/>
+        <TextBox HorizontalAlignment="Left" Height="25" TextWrapping="Wrap" Text="Enter Amount Here" VerticalAlignment="Top" Width="129" Margin="103,103,0,0" RenderTransformOrigin="0.493,2.804" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Withdraw" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="118,229,0,0" Height="29" Click="Button_Click"/>
 
     </Grid>
 </Window>

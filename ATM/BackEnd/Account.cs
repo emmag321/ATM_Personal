@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Oracle.ManagedDataAccess.Client;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +15,7 @@ namespace ATM
         private char Type;
         private bool isBlocked;
 
-        public Account()
+        public Account(object getBalance)
         {
             this.AccountID = 0;
             this.balance = 0;
@@ -27,6 +29,29 @@ namespace ATM
             this.balance = balance;
             Type = type;
             this.isBlocked = isBlocked;
+        }
+
+        //This method gets balance 
+        public static DataTable getAccountBalance(){
+            //connect to DB
+            OracleConnection conn = new OracleConnection(DBConnect.oradb);
+            conn.Open();
+
+
+
+            //Define SQL Query
+            String strSQL = "SELECT * FROM Car_Classes ORDER BY Class_Code";
+            OracleCommand cmd = new OracleCommand(strSQL, conn);
+
+            OracleDataAdapter da = new OracleDataAdapter(cmd);
+
+            DataSet DS = new DataSet();
+            da.Fill(DS, "CC");
+
+            conn.Close();
+
+
+            return DS.Tables["CC"];
         }
 
         public int getAccountID()

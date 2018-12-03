@@ -17,8 +17,9 @@
         <Image HorizontalAlignment="Left" Height="74" Margin="305,10,0,0" VerticalAlignment="Top" Width="100"/>
         <Label x:Name="lblcurrentBal" Content="Current Balance:" HorizontalAlignment="Left" Margin="185,247,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.728,0.473"/>
         <TextBox x:Name="txtBal" HorizontalAlignment="Left" Height="31" Margin="352,247,0,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" Width="131" TextChanged="txtBal_TextChanged" IsEnabled="False"/>
-        <Button x:Name="btnPrint" Content="Print Receipt" HorizontalAlignment="Left" Margin="248,356,0,0" VerticalAlignment="Top" Width="235" Height="53" FontSize="18" Click="btnPrint_Click"/>
+        <Button x:Name="btnPrint" Content="Print Receipt" HorizontalAlignment="Left" Margin="256,341,0,0" VerticalAlignment="Top" Width="235" Height="53" FontSize="18" Click="btnPrint_Click"/>
         <Button x:Name="btnBack" Content="Back" Grid.Column="3" HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="88" Height="30" FontSize="16" Click="btnBack_Click"/>
+        <Button Content="Click For Balance" HorizontalAlignment="Left" Margin="261,156,0,0" VerticalAlignment="Top" Width="230" Click="Button_Click"/>
 
     </Grid>
 </Window>

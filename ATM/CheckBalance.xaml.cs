@@ -21,7 +21,7 @@ namespace ATM
     public partial class CheckBalance : Window
     {
         
-        Account myAcc = new Account();
+        //Account myAcc = new Account();
 
         
         
@@ -31,7 +31,7 @@ namespace ATM
             //Account myAcc = new Account(1001, 12000, 'C', false);
 
             InitializeComponent();
-           txtBal.Text = myAcc.getBalance().ToString();
+           //txtBal.Text = myAcc.getBalance().ToString();
         }
 
         
@@ -57,7 +57,6 @@ namespace ATM
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            
         }
     }
 }

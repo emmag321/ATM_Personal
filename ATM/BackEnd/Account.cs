@@ -1,4 +1,5 @@
-﻿using Oracle.ManagedDataAccess.Client;
+﻿using ATM.BackEnd.external;
+using Oracle.ManagedDataAccess.Client;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -38,7 +39,7 @@ namespace ATM
             conn.Open();
 
             //Define SQL Query
-            String strSQL = "SELECT FROM Account WHERE('" + this.car_Class + "','" + this.description + "'," + this.rate + ")";
+            String strSQL = "SELECT FROM Account WHERE Balance('" + this.AccountID + "','" + this.balance + "')";
 
             //Execute SQL Query
             OracleCommand cmd = new OracleCommand(strSQL, conn);

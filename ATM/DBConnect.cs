@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ATM
+namespace ATM.BackEnd.external
 {
-    class DBConnet
+    class DBConnect
     {
         public const string oradb = "Data Source = oracle/orcl; User ID = t00185959; Password = peguk5ft;";
         //public const string oradb = "Data Source = Localhost; User ID = t00185959; Password = peguk5ft;";
-
     }
 }
+

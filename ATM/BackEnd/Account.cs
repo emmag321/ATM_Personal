@@ -32,26 +32,21 @@ namespace ATM
         }
 
         //This method gets balance 
-        public static DataTable getAccountBalance(){
-            //connect to DB
+        public void getAccountBalance(){
+            //Connect to DB
             OracleConnection conn = new OracleConnection(DBConnect.oradb);
             conn.Open();
 
-
-
             //Define SQL Query
-            String strSQL = "SELECT * FROM Car_Classes ORDER BY Class_Code";
+            String strSQL = "SELECT FROM Account WHERE('" + this.car_Class + "','" + this.description + "'," + this.rate + ")";
+
+            //Execute SQL Query
             OracleCommand cmd = new OracleCommand(strSQL, conn);
+            cmd.ExecuteNonQuery();
 
-            OracleDataAdapter da = new OracleDataAdapter(cmd);
-
-            DataSet DS = new DataSet();
-            da.Fill(DS, "CC");
-
+            //Close DB Connection
             conn.Close();
 
-
-            return DS.Tables["CC"];
         }
 
         public int getAccountID()

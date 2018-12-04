@@ -20,20 +20,18 @@ namespace ATM
     /// </summary>
     public partial class CheckBalance : Window
     {
-        //Account myAcc = new Account();
+        
+        Account myAcc = new Account();
 
-        //puts car classes from DB into Drop down menu 
-        DataTable dt = Account.getAccountBalance();
-
-
-
+        
+        
         public CheckBalance()
         {
             //this would be taken from the database
             //Account myAcc = new Account(1001, 12000, 'C', false);
 
             InitializeComponent();
-           // txtBal.Text = myAcc.getBalance().ToString();
+           txtBal.Text = myAcc.getBalance().ToString();
         }
 
         
@@ -59,7 +57,7 @@ namespace ATM
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            myAcc.getAccountBalance(txtBal_TextChanged);
+            
         }
     }
 }

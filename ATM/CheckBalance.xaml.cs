@@ -58,5 +58,20 @@ namespace ATM
         private void Button_Click(object sender, RoutedEventArgs e)
         {
         }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+           
+        }
+
+        private void cboBalance_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds = Account.getAccountBalance(ds);
+
+            //load combo with Customer and Customer Name for all customers
+            for (int i = 0; i < ds.Tables["ss"].Rows.Count; i++)
+                cboBalance.Items.Add(ds.Tables[0].Rows[i][0]);
+        }
     }
 }

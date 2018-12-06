@@ -156,14 +156,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="BackEnd\Account.cs" />
+    <Compile Include="Account.cs" />
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="CardType.cs" />
-    <Compile Include="BackEnd\external\Mod10.cs" />
-    <Compile Include="BackEnd\external\Transaction.cs" />
+    <Compile Include="Mod10.cs" />
+    <Compile Include="Transaction.cs" />
     <Compile Include="LogInProcess.cs" />
     <Compile Include="Card.cs" />
     <Compile Include="CheckBalance.xaml.cs">
@@ -203,7 +203,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <None Include="BackEnd\BackEndClassDiagram.cd" />
+    <None Include="BackEndClassDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -69,9 +69,25 @@ namespace ATM
             DataSet ds = new DataSet();
             ds = Account.getAccountBalance(ds);
 
-            //load combo with Customer and Customer Name for all customers
+            //load combo with balance
             for (int i = 0; i < ds.Tables["ss"].Rows.Count; i++)
                 cboBalance.Items.Add(ds.Tables[0].Rows[i][0]);
+        }
+
+        private void cboID_Loaded(object sender, RoutedEventArgs e)
+        {
+            DataSet ds = new DataSet();
+            ds = Account.getAccountID(ds);
+
+            //load combo with balance
+            for (int i = 0; i < ds.Tables["ss"].Rows.Count; i++)
+                cboID.Items.Add(ds.Tables[0].Rows[i][0]);
+
+        }
+
+        private void cboID_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            txtBal.Text = cboBalance.Items[cboID.SelectedIndex].ToString();
         }
     }
 }

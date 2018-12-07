@@ -15,12 +15,11 @@
         </Grid.ColumnDefinitions>
         <Label x:Name="lblChk" Content="Check Balance" HorizontalAlignment="Left" Margin="316,4,0,0" VerticalAlignment="Top" FontSize="22" Width="167" Height="52"/>
         <Image HorizontalAlignment="Left" Height="74" Margin="305,10,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="lblcurrentBal" Content="Current Balance:" HorizontalAlignment="Left" Margin="358,217,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.728,0.473"/>
-        <TextBox x:Name="txtBal" HorizontalAlignment="Left" Height="31" Margin="0,217,0,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" Width="131" TextChanged="txtBal_TextChanged" IsEnabled="False" RenderTransformOrigin="0.795,0.621" Grid.ColumnSpan="2" Grid.Column="2"/>
-        <Button x:Name="btnPrint" Content="Print Receipt" HorizontalAlignment="Left" Margin="430,323,0,0" VerticalAlignment="Top" Width="235" Height="53" FontSize="18" Click="btnPrint_Click" Grid.ColumnSpan="3"/>
+        <Label x:Name="lblcurrentBal" Content="Current Balance:" HorizontalAlignment="Left" Margin="247,183,0,0" VerticalAlignment="Top" FontSize="16" RenderTransformOrigin="0.728,0.473"/>
+        <TextBox x:Name="txtBal" HorizontalAlignment="Left" Height="31" Margin="454,183,0,0" TextWrapping="Wrap" Text="€" VerticalAlignment="Top" Width="131" TextChanged="txtBal_TextChanged" IsEnabled="False" RenderTransformOrigin="0.795,0.621" Grid.ColumnSpan="3"/>
         <Button x:Name="btnBack" Content="Back" Grid.Column="3" HorizontalAlignment="Left" Margin="39,0,0,0" VerticalAlignment="Top" Width="88" Height="30" FontSize="16" Click="btnBack_Click"/>
-        <Button Content="Click For Balance" HorizontalAlignment="Left" Margin="382,84,0,0" VerticalAlignment="Top" Width="230" Click="Button_Click" Grid.ColumnSpan="3"/>
-        <ComboBox x:Name="cboBalance" HorizontalAlignment="Left" Margin="88,118,0,0" VerticalAlignment="Top" Width="232" Loaded="cboBalance_Loaded"/>
+        <ComboBox x:Name="cboBalance" HorizontalAlignment="Left" Margin="88,118,0,0" VerticalAlignment="Top" Width="232" Loaded="cboBalance_Loaded" Visibility="Hidden"/>
+        <ComboBox x:Name="cboID" HorizontalAlignment="Left" Margin="341,106,0,0" VerticalAlignment="Top" Width="120" Loaded="cboID_Loaded" SelectionChanged="cboID_SelectionChanged" RenderTransformOrigin="0.246,-5.045"/>
 
     </Grid>
 </Window>

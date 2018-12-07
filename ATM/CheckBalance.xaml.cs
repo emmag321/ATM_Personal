@@ -34,13 +34,6 @@ namespace ATM
            //txtBal.Text = myAcc.getBalance().ToString();
         }
 
-        
-
-        private void txtBal_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            
-        }
-
         private void btnPrint_Click(object sender, RoutedEventArgs e)
         {
             //prints receipt
@@ -55,15 +48,8 @@ namespace ATM
             this.Close();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-        }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-           
-        }
-
+        //this loads the balance from the account as selected 
         private void cboBalance_Loaded(object sender, RoutedEventArgs e)
         {
             DataSet ds = new DataSet();
@@ -74,6 +60,7 @@ namespace ATM
                 cboBalance.Items.Add(ds.Tables[0].Rows[i][0]);
         }
 
+        //this cbo box loads the ID's from the account 
         private void cboID_Loaded(object sender, RoutedEventArgs e)
         {
             DataSet ds = new DataSet();
@@ -85,6 +72,7 @@ namespace ATM
 
         }
 
+        //this loads the balance into the txt box as selected in the cboID  from DB 
         private void cboID_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             txtBal.Text = cboBalance.Items[cboID.SelectedIndex].ToString();

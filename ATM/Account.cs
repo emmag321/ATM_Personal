@@ -60,8 +60,7 @@ namespace ATM
         }
 
 
-        //This method will get account id
-        //This method gets balance 
+        //This method will get account id 
         public static DataSet getAccountID(DataSet ds)
         {
             //create an OracleConnection object using the connection string defined in static class DBConnect
